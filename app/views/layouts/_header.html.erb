@@ -21,7 +21,11 @@
                             <li class="nav-item"><a href="pricing">Pricing</a></li>
                             <li class="nav-item"><a href="blog">Blog</a></li>
                             <li class="nav-item"><a href="contact">Contact</a></li>
-                            <li class="nav-item"><a href="#">Login</a></li>
+                                <% if user_signed_in? %>
+                                    <li><%= link_to "LOG OUT", destroy_user_session_path, method: :delete %></li>
+                                <% else %>
+                                    <li class="nav-item"><%= link_to "LOGIN", new_user_session_path %></li>
+                                <% end %>
                             <li class="nav-item nav-item-cta last"><a class="btn btn-cta btn-cta-primary" href="pricing">Get Started</a></li>
                         </ul><!--//nav-->
                     </div><!--//navabr-collapse-->

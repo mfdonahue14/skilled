@@ -54,6 +54,14 @@
 
   <!-- ******HEADER****** --> 
   <%= render partial: 'layouts/header'%>
+
+<!-- ****FLASH MESSAGE**** -->
+
+<% flash.each do |name, msg| %>
+     <%= content_tag(:div, msg, class: "alert alert-info") %>
+<% end %>
+
+ <!-- ****PAGE YIELD**** -->
         
     <%= yield %>
         

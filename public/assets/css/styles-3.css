@@ -541,7 +541,7 @@ blockquote {
 /* ======= Promo Section ======= */
 .promo {
   position: relative;
-  background: #0e83cd url('../images/background/promo-bg.jpg') no-repeat center center;
+  background: #0e83cd url('../images/background/bookshelf.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
