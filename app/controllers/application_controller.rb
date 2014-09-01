@@ -17,6 +17,4 @@ class ApplicationController < ActionController::Base
 
   def tour
   end
-
-
 end
