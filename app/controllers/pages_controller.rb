@@ -1,6 +1,5 @@
 class PagesController < ApplicationController
-  def blog
-    http_basic_authenticate_with :name => "user", :password => "password" 
+  def about
   end
 
   def contact
