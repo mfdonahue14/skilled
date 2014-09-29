@@ -24,6 +24,8 @@ body {
 }
 .footer {
   height: 296px;
+  clear:both;
+
   /* must be the same height as footer */
 }
 h1,
